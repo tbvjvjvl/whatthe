@@ -58,7 +58,7 @@ while True:
                     upbit.buy_market_order("KRW-ETC", krw*0.9995)
         else:
             etc = get_balance("ETC")
-            if etc > 0.06:
+            if etc > 0.05:
                 upbit.sell_market_order("KRW-ETC", etc*0.9995)
         time.sleep(1)
     except Exception as e:
